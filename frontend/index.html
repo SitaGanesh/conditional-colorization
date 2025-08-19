@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Conditional Colorizer</title>
+</head>
+<body>
+  <h1>Conditional Colorizer (API demo)</h1>
+  <form id="f">
+    <div>
+      <label>Image:</label>
+      <input type="file" id="img" accept="image/*" required />
+    </div>
+    <div>
+      <label>Mask (optional, white = apply color):</label>
+      <input type="file" id="mask" accept="image/*" />
+    </div>
+    <div>
+      <label>Color:</label>
+      <input type="color" id="color" value="#00aaff" />
+    </div>
+    <button type="submit">Colorize</button>
+  </form>
+  <h3>Result:</h3>
+  <img id="out" />
+
+  <script>
+    const form = document.getElementById('f');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      const img = document.getElementById('img').files[0];
+      const mask = document.getElementById('mask').files[0];
+      const color = document.getElementById('color').value;
+      fd.append('image', img);
+      if (mask) fd.append('mask', mask);
+      fd.append('color_hex', color);
+
+      const res = await fetch('http://localhost:8000/infer', { method: 'POST', body: fd });
+      if (!res.ok) { alert('Request failed'); return; }
+      const blob = await res.blob();
+      document.getElementById('out').src = URL.createObjectURL(blob);
+    });
+  </script>
+</body>
+</html>
