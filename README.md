@@ -5,7 +5,6 @@ A deep learning-powered image colorization system that automatically converts gr
 ![Project Banner](https://img.shields.io/badge/AI-Image%20Colorization-blue?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 ## 📋 Table of Contents
 
@@ -21,7 +20,6 @@ A deep learning-powered image colorization system that automatically converts gr
 10. [Training Your Own Model](#-training-your-own-model)
 11. [API Reference](#-api-reference)
 12. [Troubleshooting](#-troubleshooting)
-13. [Contributing](#-contributing)
 
 ## 🌟 Project Overview
 
