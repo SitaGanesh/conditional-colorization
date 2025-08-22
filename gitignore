@@ -1,0 +1,553 @@
+# 🔒 Complete .gitignore for Conditional Image Colorization Project
+
+# =============================================================================
+# PYTHON RELATED
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# =============================================================================
+# MACHINE LEARNING / AI SPECIFIC
+# =============================================================================
+
+# PyTorch model files
+*.pth
+*.pt
+*.pkl
+*.pickle
+
+# TensorFlow SavedModel
+saved_model/
+*.pb
+*.h5
+*.hdf5
+
+# Weights & Biases (wandb)
+wandb/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Tensorboard logs
+runs/
+logs/
+tb_logs/
+
+# Checkpoints directory (keep structure but not files)
+checkpoints/*.pth
+checkpoints/*.pt
+checkpoints/*.pkl
+!checkpoints/.gitkeep
+
+# Model outputs and results
+results/
+outputs/
+predictions/
+inference_results/
+
+# Training artifacts
+samples/
+sample_outputs/
+training_samples/
+validation_samples/
+
+# Experiment tracking
+experiments/
+*.mlflow
+
+# ONNX models
+*.onnx
+
+# =============================================================================
+# DATASET AND DATA FILES
+# =============================================================================
+
+# Large dataset directories
+data/
+datasets/
+raw_data/
+processed_data/
+
+# Image files (large datasets)
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.tif
+*.gif
+*.webp
+*.svg
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+
+# Audio files
+*.wav
+*.mp3
+*.flac
+*.aac
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# CSV and data files
+*.csv
+*.tsv
+*.json
+*.xml
+*.parquet
+
+# Exceptions for small example/demo files
+!examples/*.jpg
+!examples/*.png
+!demo/*.jpg
+!demo/*.png
+!assets/*.jpg
+!assets/*.png
+!static/*.jpg
+!static/*.png
+
+# =============================================================================
+# DEVELOPMENT AND IDE
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# =============================================================================
+# WEB DEVELOPMENT (for Gradio/FastAPI apps)
+# =============================================================================
+
+# Node.js (if using any frontend build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React/Vue build directories
+build/
+dist/
+
+# Static files generated by frameworks
+static/
+media/
+
+# =============================================================================
+# DOCKER AND CONTAINERS
+# =============================================================================
+
+# Docker
+Dockerfile.prod
+docker-compose.override.yml
+.dockerignore
+
+# =============================================================================
+# CLOUD AND DEPLOYMENT
+# =============================================================================
+
+# AWS
+.aws/
+*.pem
+
+# Google Cloud
+*.json
+gcloud/
+
+# Azure
+.azure/
+
+# Kubernetes
+*.yaml
+*.yml
+!docker-compose.yml
+!.github/workflows/*.yml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# =============================================================================
+# JUPYTER NOTEBOOKS
+# =============================================================================
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Jupyter Notebook outputs (optional - you might want to keep some)
+# Uncomment if you want to exclude all notebook outputs
+# *.ipynb
+
+# Jupyter Lab
+.jupyter/
+
+# =============================================================================
+# CONFIGURATION AND SECRETS
+# =============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Configuration files with sensitive data
+config.ini
+settings.json
+secrets.json
+
+# API keys and credentials
+*.key
+*.cert
+*.crt
+*.pem
+api_keys.txt
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# =============================================================================
+# TEMPORARY AND CACHE FILES
+# =============================================================================
+
+# General temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Cache directories
+cache/
+.cache/
+__pycache__/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Log files
+*.log
+logs/
+
+# =============================================================================
+# TESTING
+# =============================================================================
+
+# Test outputs
+test_results/
+test_outputs/
+coverage_reports/
+
+# Pytest
+.pytest_cache/
+.coverage
+
+# =============================================================================
+# DOCUMENTATION
+# =============================================================================
+
+# Documentation build
+docs/_build/
+site/
+
+# =============================================================================
+# PROJECT SPECIFIC EXCLUSIONS
+# =============================================================================
+
+# Notebooks output directories
+notebooks/outputs/
+notebooks/results/
+notebooks/test_*
+notebooks/*.png
+notebooks/*.jpg
+notebooks/*.jpeg
+
+# Gradio app temporary files
+gradio_cached_examples/
+flagged/
+
+# FastAPI uploads
+uploads/
+temp_uploads/
+
+# Model download cache
+.torch/
+.cache/torch/
+
+# Custom experiment directories
+experiments/
+runs_*/
+
+# Large files that shouldn't be in git
+*.zip
+*.tar.gz
+large_dataset/
+
+# =============================================================================
+# EXCEPTIONS (Files to INCLUDE despite patterns above)
+# =============================================================================
+
+# Keep important project files
+!README.md
+!LICENSE
+!requirements.txt
+!setup.py
+!pyproject.toml
+!Dockerfile
+!docker-compose.yml
+!.github/
+!.gitignore
+
+# Keep example/demo images (small files)
+!examples/
+!demo/
+!assets/
+!static/sample_*
+
+# Keep directory structure files
+!*/.gitkeep
+!*/README.md
+
+# Keep essential config templates
+!config_template.json
+!settings_template.ini
+
+# =============================================================================
+# SIZE LIMITS
+# =============================================================================
+
+# Files larger than 100MB (GitHub limit is 100MB)
+# This is handled by git-lfs or should be avoided entirely
+
+# =============================================================================
+# CUSTOM ADDITIONS FOR YOUR PROJECT
+# =============================================================================
+
+# Add any project-specific patterns here
+# For example:
+# my_custom_directory/
+# *.custom_extension
