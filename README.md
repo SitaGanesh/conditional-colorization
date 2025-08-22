@@ -527,7 +527,7 @@ for color in ref_colors:
     )
 ```
 
-#### Experiment H: Temporal Consistency (Video)
+#### Experiment H: Temporal Consistency 
 ```python
 # Process video frames with consistent colorization
 import cv2
@@ -673,6 +673,31 @@ avg_ssim = np.mean([r['ssim'] for r in results])
 print(f"Average PSNR: {avg_psnr:.2f}")
 print(f"Average SSIM: {avg_ssim:.3f}")
 ```
+## Images Walkthrough
+
+1. Epochos
+
+![training](https://github.com/user-attachments/assets/95c5cca8-6a7a-49e5-9a1b-52765ced85da)
+
+2. 
+
+![result1](https://github.com/user-attachments/assets/29a14845-15f5-45ce-8461-6676e9c0137f)
+
+3. Input, color gradient, and output
+
+![0](https://github.com/user-attachments/assets/cb676ae1-29c6-4fc7-a196-7020a0deeb14)
+![1004](https://github.com/user-attachments/assets/6a6220f4-afe9-4532-9315-16c608407be5)
+![1008](https://github.com/user-attachments/assets/f274e44b-77ef-476e-badb-5c14d926b22c)
+![1014](https://github.com/user-attachments/assets/b8dbab15-011b-4dfa-b94b-830feaed172b)
+![color_grad](https://github.com/user-attachments/assets/e5ce515f-a066-45f0-88fc-b9e400411749)
+
+
+![result2](https://github.com/user-attachments/assets/245839d9-bff1-45fe-bc1e-2046795562d7)
+
+4. GUI
+   
+![GUI](https://github.com/user-attachments/assets/97666cd4-7ca0-49eb-9bce-49a4dd9a0b4e)
+
 
 ## 🔌 API Reference
 
