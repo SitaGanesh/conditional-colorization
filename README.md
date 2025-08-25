@@ -6,20 +6,6 @@ A deep learning-powered image colorization system that automatically converts gr
 ![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red?style=for-the-badge)
 
-## 📋 Table of Contents
-
-1. [Project Overview](#-project-overview)
-2. [Key Features](#-key-features)
-3. [Technology Stack](#-technology-stack)
-4. [Quick Setup Guide](#-quick-setup-guide)
-5. [Model Architecture](#-model-architecture)
-6. [How It Works](#-how-it-works)
-7. [Usage Interfaces](#-usage-interfaces)
-8. [Experiments You Can Try](#-experiments-you-can-try)
-9. [Project Structure](#-project-structure)
-10. [Training Your Own Model](#-training-your-own-model)
-11. [API Reference](#-api-reference)
-12. [Troubleshooting](#-troubleshooting)
 
 ## 🌟 Project Overview
 
@@ -74,8 +60,8 @@ The system uses a **U-Net architecture** trained in **LAB color space** for bett
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/your-username/conditional-colorization-project.git
-cd conditional-colorization-project
+git clone https://github.com/SitaGanesh/conditional-colorization.git
+cd conditional-colorization
 ```
 
 ### Step 2: Create and Activate Virtual Environment
@@ -553,7 +539,7 @@ def colorize_video(input_video, output_video):
 ## 📁 Project Structure
 
 ```
-conditional-colorization-project/
+conditional-colorization/
 ├── 📂 src/                          # Core source code
 │   ├── __init__.py                  # Package initialization
 │   ├── dataset.py                   # Data loading and preprocessing
@@ -855,6 +841,8 @@ if expected_channels is not None and img.shape[2] != expected_channels:
 - **PSNR**: 25-35 dB (higher is better)
 - **SSIM**: 0.8-0.95 (closer to 1 is better)
 - **Visual Quality**: Subjective evaluation recommended
+
+***
 
 **Happy Colorizing! 🎨**
 
